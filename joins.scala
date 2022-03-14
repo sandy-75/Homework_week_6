@@ -1,4 +1,5 @@
-#Joining should be along the lines of tmcgrath (below)but it would be great to adjust it for something like yellow and green taxi data
+// -------  Joining should be along the lines of tmcgrath (below) but it would be great to adjust it for something like yellow and green taxi data ------------ //
+
 package com.supergloo.examples
 
 import com.supergloo.KafkaStreamsJoins
@@ -15,9 +16,9 @@ class KafkaStreamsJoinsSpec extends AnyFlatSpec with Matchers with KafkaTestSetu
   import collection.JavaConverters._
 
   // test fixtures
-  val inputTopicOne = "input-topic-1"
-  val inputTopicTwo = "input-topic-2"
-  val outputTopic = "output-topic"
+  val inputTopicOne = "my-sensor-topic-1"
+  val inputTopicTwo = "my-sensor-topic-2"
+  val outputTopic = "my-sensor-output-topic"
 
   val stateStore = "saved-state"
 
